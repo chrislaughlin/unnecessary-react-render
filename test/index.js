@@ -1,21 +1,27 @@
 import assert from 'assert';
 import React, {Component} from 'react';
-import {renderToStaticMarkup} from 'react-dom/server';
+import { configure, shallow } from 'enzyme';
+import Adapter from 'enzyme-adapter-react-16';
+
+configure({ adapter: new Adapter() });
 
 it('tests that react-transform-noop transformed the component', () => {
     class TestComponent extends Component {
         render() {
+            console.log('In test ', this.props);
+            console.log('render');
             return <div>Hello World</div>;
         }
     }
 
-    assert.equal(
-        TestComponent.__react_transform_noop,
-        true,
-        'expected TestComponent.noop to return undefined'
+    const comp = shallow(
+        <TestComponent
+            foo={'bar'}
+        />
     );
-    assert.equal(
-        renderToStaticMarkup(<TestComponent/>),
-        '<div>Hello World</div>'
-    );
+
+    comp.instance().componentDidUpdate({foo: 'test'});
+
+    assert.equal(true, true);
+
 });

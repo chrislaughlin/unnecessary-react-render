@@ -1,6 +1,6 @@
 {
   "name": "unnecessary-react-render",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "React Transform that prints if a render was unnecessary",
   "main": "lib/index.js",
   "files": [
@@ -28,7 +28,7 @@
     "url": "https://github.com/chrislaughlin/unnecessary-react-render/issues"
   },
   "homepage": "https://github.com/chrislaughlin/unnecessary-react-render#readme",
-  "dependencies" : {
+  "dependencies": {
     "deep-diff": "^0.3.8"
   },
   "devDependencies": {

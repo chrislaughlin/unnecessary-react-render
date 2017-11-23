@@ -21,6 +21,7 @@ it('tests that react-transform-noop transformed the component', () => {
     );
 
     comp.instance().componentDidUpdate({foo: 'test'});
+    comp.instance().componentDidUpdate({foo: 'bar'});
 
     assert.equal(true, true);
 

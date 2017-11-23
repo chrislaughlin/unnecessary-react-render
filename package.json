@@ -1,7 +1,7 @@
 {
-  "name": "react-transform-noop",
+  "name": "unnecessary-react-render",
   "version": "1.0.1",
-  "description": "React Transform that does nothing",
+  "description": "React Transform that prints if a render was unnecessary",
   "main": "lib/index.js",
   "files": [
     "lib"
@@ -15,18 +15,19 @@
   },
   "keywords": [
     "react-transform",
-    "example"
+    "unnecessary",
+    "render"
   ],
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/pwmckenna/react-transform-noop.git"
+    "url": "git+https://github.com/chrislaughlin/unnecessary-react-render"
   },
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/pwmckenna/react-transform-noop/issues"
+    "url": "https://github.com/chrislaughlin/unnecessary-react-render/issues"
   },
-  "homepage": "https://github.com/pwmckenna/react-transform-noop#readme",
+  "homepage": "https://github.com/chrislaughlin/unnecessary-react-render#readme",
   "devDependencies": {
     "babel-cli": "^6.5.1",
     "babel-plugin-react-transform": "^2.0.0",
